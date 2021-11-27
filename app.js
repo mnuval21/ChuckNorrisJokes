@@ -1,6 +1,6 @@
 async function getJoke(firstName, lastName){
 
-  const res = await axios.get(`http://api.icndb.com/jokes/random`, { params : {firstName, lastName} });
+  const res = await axios.get(`https://api.icndb.com/jokes/random`, { params : {firstName, lastName} });
   joke.innerHTML =  res.data.value.joke;
 }
 
